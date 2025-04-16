@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+    //Números vizinhos
+    let num = Number(prompt("Digite um número:"));
+    let anterior = num - 1;
+    let posterior = num + 1;
+    alert(`Número: ${num}`
+        + "\n" + `Vizinhos: ${anterior} e ${posterior}`);
+
+    //Divisão de contas
+    let conta = Number(prompt("Valor da conta:"));
+    let clientes = Number(prompt("Número de clientes:"));
+    let valor = conta / clientes;
+    alert(`Valor da conta: ${conta}`
+        + "\n" + `Número de cliente: ${clientes}`
+        + "\n" + `Valor por cliente: ${valor.toFixed(2)}`);
+
+    //Calculo de desconto e parcelamento
+    let preco = Number(prompt("Preço do produto:"))
+    let desconto = preco * 0.10;
+    let precoVista = preco - desconto;
+    let precoParcelado = preco / 3;
+    alert(`Preço: ${preco.toFixed(2)}`
+        + "\n" + `Á vista: ${precoVista.toFixed(2)}`
+        + "\n" + `Ou 3x de: ${precoParcelado.toFixed(2)}`);
+
+    //Nota média de um aluno
+    let nota1 = parseFloat(prompt("Nota 1:"));
+    let nota2 = parseFloat(prompt("Nota 2:"));
+    let media = nota1 + nota2 / 2;
+    alert(`1ª nota: ${nota1}`
+        + "\n" + `2ª Nota: ${nota2}`
+        + "\n" + `Média: ${media.toFixed(2)}`);
+</script>
